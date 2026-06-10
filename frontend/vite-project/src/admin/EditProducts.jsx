@@ -13,7 +13,7 @@ const EditProduct = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-      const res = await fetch(`https://full-e-commerce-website-happyshop.onrender.com/api/products/${id}`);
+      const res = await fetch(`https://full-stack-e-commerce-website-9ten.onrender.com/api/products/${id}`);
       const data = await res.json();
       setFormData({ name: data.name, description: data.description, price: data.price, category: data.category, stock: data.stock });
     };
@@ -31,7 +31,7 @@ const EditProduct = () => {
     data.append('stock', formData.stock);
     if (image) data.append('image', image);
 
-    const res = await fetch(`https://full-e-commerce-website-happyshop.onrender.com/api/products/${id}`, {
+    const res = await fetch(`https://full-stack-e-commerce-website-9ten.onrender.com/api/products/${id}`, {
       method: 'PUT',
       headers: { Authorization: `Bearer ${user.token}` },
       body: data

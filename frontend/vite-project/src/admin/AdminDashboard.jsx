@@ -15,7 +15,7 @@ const AdminDashboard = () => {
 
     const fetchStats = async () => {
       try {
-        const res = await fetch('https://full-e-commerce-website-happyshop.onrender.com/api/analytics', {
+        const res = await fetch('https://full-stack-e-commerce-website-9ten.onrender.com/api/analytics', {
           headers: { Authorization: `Bearer ${user.token}` }
         });
         const data = await res.json();

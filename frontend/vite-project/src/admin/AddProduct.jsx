@@ -31,7 +31,7 @@ const AddProduct = () => {
     data.append('image', image);
 
     try {
-      const res = await fetch('https://full-e-commerce-website-happyshop.onrender.com/api/products', {
+      const res = await fetch('https://full-stack-e-commerce-website-9ten.onrender.com/api/products', {
         method: 'POST',
         headers: { Authorization: `Bearer ${user.token}` },
         body: data

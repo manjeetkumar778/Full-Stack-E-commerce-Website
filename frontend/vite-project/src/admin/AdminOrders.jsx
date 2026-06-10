@@ -7,7 +7,7 @@ const AdminOrders = () => {
 
   useEffect(() => {
     const fetchOrders = async () => {
-      const res = await fetch('https://full-e-commerce-website-happyshop.onrender.com/api/orders', {
+      const res = await fetch('https://full-stack-e-commerce-website-9ten.onrender.com/api/orders', {
         headers: { Authorization: `Bearer ${user.token}` }
       });
       const data = await res.json();
@@ -17,7 +17,7 @@ const AdminOrders = () => {
   }, [user]);
 
   const updateStatus = async (id, status) => {
-    const res = await fetch(`https://full-e-commerce-website-happyshop.onrender.com/api/orders/${id}/status`, {
+    const res = await fetch(`https://full-stack-e-commerce-website-9ten.onrender.com/api/orders/${id}/status`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${user.token}` },
       body: JSON.stringify({ status })

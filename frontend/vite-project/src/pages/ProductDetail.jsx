@@ -16,7 +16,7 @@ const ProductDetail = () => {
       setLoading(true);
 
       const res = await fetch(
-        `https://full-e-commerce-website-happyshop.onrender.com/api/products/${id}`
+        `https://full-stack-e-commerce-website-9ten.onrender.com/api/products/${id}`
       );
 
       if (!res.ok) {

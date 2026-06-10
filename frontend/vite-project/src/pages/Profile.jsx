@@ -16,7 +16,7 @@ const Profile = () => {
     const fetchMyOrders = async () => {
       try {
         const res = await fetch(
-          'https://full-e-commerce-website-happyshop.onrender.com/api/orders/myorders',
+          'https://full-stack-e-commerce-website-9ten.onrender.com/api/orders/myorders',
           {
             headers: {
               Authorization: `Bearer ${user.token}`,

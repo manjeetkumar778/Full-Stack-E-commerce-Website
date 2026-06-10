@@ -7,7 +7,7 @@ const AdminUsers = () => {
 
   useEffect(() => {
     const fetchUsers = async () => {
-      const res = await fetch('https://full-e-commerce-website-happyshop.onrender.com/api/auth/users', {
+      const res = await fetch('https://full-stack-e-commerce-website-9ten.onrender.com/api/auth/users', {
         headers: { Authorization: `Bearer ${user.token}` }
       });
       const data = await res.json();

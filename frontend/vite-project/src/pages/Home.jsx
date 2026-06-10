@@ -9,7 +9,7 @@ const Home = () => {
     const fetchProducts = async () => {
       try {
         const res = await fetch(
-          'https://full-e-commerce-website-happyshop.onrender.com/api/products'
+          'https://full-stack-e-commerce-website-9ten.onrender.com/api/products'
         );
 
         if (!res.ok) {

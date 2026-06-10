@@ -11,7 +11,7 @@ const Shop = () => {
   const fetchProducts = async () => {
     try {
       const res = await fetch(
-        'https://full-e-commerce-website-happyshop.onrender.com/api/products'
+        'https://full-stack-e-commerce-website-9ten.onrender.com/api/products'
       );
 
       const text = await res.text();

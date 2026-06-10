@@ -14,7 +14,7 @@ const Login = () => {
 
     try {
       const res = await fetch(
-        "https://full-e-commerce-website-happyshop.onrender.com/api/auth/login",
+        "https://full-stack-e-commerce-website-9ten.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: {

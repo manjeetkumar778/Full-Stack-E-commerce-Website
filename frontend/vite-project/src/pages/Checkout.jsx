@@ -19,7 +19,7 @@ const Checkout = () => {
   const handlePayment = async () => {
     try {
       const orderRes = await fetch(
-        'https://full-e-commerce-website-happyshop.onrender.com/api/payment/order',
+        'https://full-stack-e-commerce-website-9ten.onrender.com/api/payment/order',
         {
           method: 'POST',
           headers: {
@@ -50,7 +50,7 @@ const Checkout = () => {
         description: 'Test Transaction',
         order_id: orderData.id,
         handler: async function (response) {
-          const verifyRes = await fetch('https://full-e-commerce-website-happyshop.onrender.com/api/payment/verify', {
+          const verifyRes = await fetch('https://full-stack-e-commerce-website-9ten.onrender.com/api/payment/verify', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(response)
@@ -59,7 +59,7 @@ const Checkout = () => {
             const token = localStorage.getItem("token");
 
             const saveOrderRes = await fetch(
-              'https://full-e-commerce-website-happyshop.onrender.com/api/orders',
+              'https://full-stack-e-commerce-website-9ten.onrender.com/api/orders',
               {
                 method: 'POST',
                 headers: {
@@ -103,7 +103,7 @@ const Checkout = () => {
   };
 
   const bypassPayment = async () => {
-    const saveOrderRes = await fetch('https://full-e-commerce-website-happyshop.onrender.com/api/orders', {
+    const saveOrderRes = await fetch('https://full-stack-e-commerce-website-9ten.onrender.com/api/orders', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
